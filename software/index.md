@@ -55,6 +55,15 @@ handled by the micro:bit runtime and mbed. A pre-compiled runtime image is
 included in the browser and concatenated with the compiled script before
 being presented for download.
 
+Another alternative for programming the BBC micro:bit board is Simulink®, developed by MathWorks®. This is a block diagram environment for simulation and Model-Based Design. In the graphical editor, you can build systems using blocks, simulate to understand system behaviour, and automatically generate code to run directly on the hardware. This approach is a great introduction to the automatic code generation process performed in industry, including:
+
+* **The use of Simulink® external mode.** The external mode enables you to connect your Simulink block diagram to your application that runs the model on the micro:bit target. The block diagram becomes a user interface to the real-time application. By changing parameters in the Simulink blocks, you also change parameters in the real-time application. Note that in this case you need a host computer to build and start/stop you model. 
+*	**Deployment to the micro:bit board**, enabling the micro:bit board to run completely autonomously as a standalone application.
+* **Seamless progression to working with other hardware boards**, such as RaspberryPi, Arduino, LEGO EV3, etc. Simulink already contains hardware support libraries for the more complex boards. Moving on from one hardware target to another requires only minimal changes.
+
+Programming the BBC micro:bit board with Simulink requires the installation of the [Simulink BBC micro:bit support package](https://www.mathworks.com/matlabcentral/fileexchange/60273-simulink-coder-support-package-for-bbc-micro-bit-board).
+
+
 ## Interpreted Languages
 
 In the official micro:bit editors at microbit.co.uk, only Python is interpreted. This is done by the use of the MicroPython interpreter.
@@ -80,6 +89,7 @@ Here's a non-exhaustive list of possible code editors for use with the micro:bit
 * [mbed Online Compiler](http://developer.mbed.org/platforms/Microbit)
 * [Mu offline Python editor](http://codewith.mu/)
 * [PXT for micro:bit](http://pxt.microbit.org) (successor to the TouchDevelop-based editors above)
+* [MATLAB](https://www.mathworks.com/products/matlab.html) / [Simulink](https://www.mathworks.com/products/simulink.html)
 
 
 # From Coding Environment to micro:bit
